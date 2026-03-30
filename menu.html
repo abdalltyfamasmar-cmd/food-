@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Menu</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="nav">
+<h2>Menu</h2>
+<a href="cart.html">Cart (<span id="count">0</span>)</a>
+</header>
+
+<div class="filters">
+<button onclick="filterMenu('all')">All</button>
+<button onclick="filterMenu('food')">Food</button>
+<button onclick="filterMenu('drink')">Drinks</button>
+<button onclick="filterMenu('dessert')">Desserts</button>
+</div>
+
+<h2 class="title">Menu</h2>
+<div class="container" id="menu"></div>
+
+<script src="script.js"></script>
+</body>
+</html>

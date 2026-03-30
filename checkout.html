@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Checkout</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>Checkout</h1>
+
+<input id="name" placeholder="Full Name"><br><br>
+<input id="address" placeholder="Address"><br><br>
+
+<label><input type="radio" name="pay" value="Cash"> Cash</label><br>
+<label><input type="radio" name="pay" value="Card"> Card</label><br><br>
+
+<button onclick="placeOrder()">Confirm Order</button>
+<div id="cardBox" style="display:none;">
+<input placeholder="Card Number"><br><br>
+<input placeholder="Expiry"><br><br>
+<input placeholder="CVV"><br><br>
+</div>
+<input type="radio" name="pay" value="Card" onclick="showCard()"> Card
+
+<script src="script.js"></script>
+</body>
+</html>
